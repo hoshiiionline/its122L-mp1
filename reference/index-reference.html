@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniFlix - Featured Page</title>
+    <link rel="stylesheet" href="styles-reference.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>MiniFlix</h1>
+    </header>
+
+    <main>
+        <!-- Featured Movie Section -->
+        <section class="featured">
+            <div class="featured-content">
+                <h2 id="featured-title">Movie 1</h2>
+                <p id="featured-description">
+                    An epic journey of adventure and discovery. Watch the thrilling trailer now!
+                </p>
+                <video id="featured-video" controls autoplay>
+                    <source src="trailers/trailer1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Movie Carousel Section -->
+        <section class="carousel">
+            <h3>Browse Movies</h3>
+            <div class="poster-grid">
+                <div class="poster" data-title="Movie 1" 
+                     data-description="An epic journey of adventure and discovery." 
+                     data-trailer="trailers/trailer1.mp4">
+                    <img src="https://via.placeholder.com/150x225?text=Movie+1" alt="Movie 1">
+                </div>
+                <div class="poster" data-title="Movie 2" 
+                     data-description="A heartwarming story about love and friendship." 
+                     data-trailer="trailers/trailer2.mp4">
+                    <img src="https://via.placeholder.com/150x225?text=Movie+2" alt="Movie 2">
+                </div>
+                <div class="poster" data-title="Movie 3" 
+                     data-description="A thrilling mystery that will keep you on edge." 
+                     data-trailer="trailers/trailer3.mp4">
+                    <img src="https://via.placeholder.com/150x225?text=Movie+3" alt="Movie 3">
+                </div>
+                <!-- Add more posters as needed -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

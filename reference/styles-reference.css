@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.navbar {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: red;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+}
+
+/* Featured Section */
+.featured {
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.featured p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.featured video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Carousel Section */
+.carousel {
+    margin: 20px;
+    padding: 20px;
+}
+
+.carousel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.poster-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.poster {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.poster img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+}
