@@ -11,11 +11,11 @@
         <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="netflix logo" class="logo">
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="/movies">Movies</a></li>
-            <li><a href="/tv">TV Shows</a></li>
-            <li><a href="/tv">Anime</a></li>
-            <li><a href="/tv">Japanese Movies</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="?category=MV">Movies</a></li>
+            <li><a href="?category=TVS">TV Shows</a></li>
+            <li><a href="?category=JANIM">Anime</a></li>
+            <li><a href="?category=JVM">Japanese Movies</a></li>
           </ul>
         </nav>
         <nav>
@@ -35,14 +35,34 @@
     <section class="carousel">
         <h2>Recommended For Youu!</h2>
         <div class="poster-container">
-        <?php 
+        <?php
+                if (isset($_GET['category'])) {
+                    $filterValue = $_GET['category'];
+
+                    echo "Filter value: " . htmlspecialchars($filterValue);
+                } else {
+                    $filterValue = "";
+
+                    echo "No filter value provided.";
+                    echo "Filter value: " . htmlspecialchars($filterValue);
+                }
+
                 $movies = include('data/movies.php');
                 foreach ($movies as $movie) {
-                    echo "
-                        <div class='poster' trailerid='{$movie['trailerPath']}' titleid='{$movie['title']}'>
-                        <img src='{$movie['posterPath']}' alt='{$movie['title']}'>
-                        </div>
-                    ";
+                    if ($movie['category'] == $filterValue){
+                        echo "
+                            <div class='poster' trailerid='{$movie['trailerPath']}' titleid='{$movie['title']}'>
+                            <img src='{$movie['posterPath']}' alt='{$movie['title']}'>
+                            </div>
+                            ";
+
+                    } else if ($movie['category'] == ""){
+                        echo "
+                            <div class='poster' trailerid='{$movie['trailerPath']}' titleid='{$movie['title']}'>
+                            <img src='{$movie['posterPath']}' alt='{$movie['title']}'>
+                            </div>
+                            ";
+                    }
                 }
             ?>         
         </div>
