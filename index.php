@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="netflix logo" class="logo">
+        <img src="/data/WatchIt-removebg-preview.png" alt="netflix logo" class="logo">
         <nav>
           <ul>
             <li><a href="?#">Home</a></li>
@@ -39,8 +39,14 @@
                         echo "
                             <source src='{$movie['trailerPath']}' type='video/mp4'>
                             ";
-
+                        break;
+                    } else if ($filterValue == "ANY"){
+                        echo "
+                            <source src='{$movie['trailerPath']}' type='video/mp4'>
+                            ";
+                        break;
                     }
+
                 }
             ?>         
             </video>
@@ -52,18 +58,6 @@
         <h2>Recommended For Youu!</h2>
         <div class="poster-container">
         <?php
-                if (isset($_GET['category'])) {
-                    $filterValue = $_GET['category'];
-
-                    echo "Filter value: " . htmlspecialchars($filterValue);
-                } else {
-                    $filterValue = "ANY";
-
-                    echo "No filter value provided.";
-                    echo "Filter value: " . htmlspecialchars($filterValue);
-                }
-
-                $movies = include('data/movies.php');
                 foreach ($movies as $movie) {
                     if ($movie['category'] == $filterValue){
                         echo "
