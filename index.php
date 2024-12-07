@@ -11,7 +11,7 @@
         <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="netflix logo" class="logo">
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="?#">Home</a></li>
             <li><a href="?category=MV">Movies</a></li>
             <li><a href="?category=TVS">TV Shows</a></li>
             <li><a href="?category=JANIM">Anime</a></li>
@@ -26,7 +26,23 @@
     <section class="feature">
         <div class="video-player">
             <video id="videoPlayer" autoplay>
-                <source src="videos/trailer-kaguyasama-loveiswar.mp4" type="video/mp4">
+                <?php
+                if (isset($_GET['category'])) {
+                    $filterValue = $_GET['category'];
+                } else {
+                    $filterValue = "ANY";
+                }
+
+                $movies = include('data/movies.php');
+                foreach ($movies as $movie) {
+                    if ($movie['category'] == $filterValue){
+                        echo "
+                            <source src='{$movie['trailerPath']}' type='video/mp4'>
+                            ";
+
+                    }
+                }
+            ?>         
             </video>
         </div>
         <p id="feature-caption">
