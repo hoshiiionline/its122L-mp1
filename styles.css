@@ -6,11 +6,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0px 50px 0px;
+    padding: 0px 0px 0px;
 }
 
 .feature {
-    padding: 20px;
+    width: 100%;
     text-align: center;
 }
 
@@ -25,10 +25,12 @@ body {
 }
 
 .feature video {
-    width: 100%;
-    border-radius: 10px;
-    padding: 0px 50px 0px;
-    max-width: 900px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-height: calc(100vh - 120px);
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .video-player {
@@ -37,6 +39,15 @@ body {
     align-items: center;
     margin: 20px 0;
 }
+
+.carousel {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
 
 .poster-container {
     display: flex;
@@ -49,9 +60,6 @@ body {
     cursor: pointer;
     text-align: center;
     transition: transform 0.3s;
-}
-
-.poster {
     font-size: 1rem;
 }
 
