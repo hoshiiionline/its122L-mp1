@@ -9,29 +9,57 @@ body {
     padding: 0px 50px 0px;
 }
 
-video {
+.feature {
+    padding: 20px;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.feature video {
     width: 100%;
     border-radius: 10px;
     padding: 0px 50px 0px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px 50px 0px;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;    
+    max-width: 900px;
 }
 
 .video-player {
     display: flex;
-    justify-content: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0;
 }
 
+.poster-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.poster {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.poster {
+    font-size: 1rem;
+}
+
+.poster img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.poster:hover {
+    transform: translateY(-20px)
+}

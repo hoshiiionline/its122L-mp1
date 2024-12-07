@@ -7,22 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <section class="feature">
     <div class="video-player">
-        <video controls>
-            <source src="videos/trailer-kaguyasama-loveiswar.mp4" type="video/mp4">
-        </video>
-    </div>
+            <video id="videoPlayer" controls autoplay>
+                <source src="videos/trailer-kaguyasama-loveiswar.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h2 id="feature-title">Kaguya-Sama Love is War</h2>
+    </section>
 
-    <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>  
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>  
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>  
-    </div>
+    <section class="carousel">
+        <h2>Recommended For You!</h2>
+        <div class="poster-container">
+            <div class="poster" trailerid="videos/trailer-kaguyasama-loveiswar.mp4" titleid="Kaguya-Sama: Love is War">
+                <img id="kaguya-sama" src="posters/poster-kaguyasama-loveiswar.jpg" alt="Movie 1">
+                <p>Kaguya-Sama: Love is War</p>
+            </div>
+            <div class="poster" trailerid="videos/trailer-kiminonawa.mp4" titleid="Kimi No Nawa">
+                <img id="kimi-no-nawa" src="posters/poster-kiminonawa.jpg" alt="Movie 1">
+                <p>Kimi No Nawa</p>            
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
