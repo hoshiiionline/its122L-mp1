@@ -15,7 +15,7 @@
             <li><a href="?category=MV">Movies</a></li>
             <li><a href="?category=TVS">TV Shows</a></li>
             <li><a href="?category=JANIM">Anime</a></li>
-            <li><a href="?category=JVM">Japanese Movies</a></li>
+            <li><a href="?category=JMV">Japanese Movies</a></li>
           </ul>
         </nav>
         <nav>
@@ -41,7 +41,7 @@
 
                     echo "Filter value: " . htmlspecialchars($filterValue);
                 } else {
-                    $filterValue = "";
+                    $filterValue = "ANY";
 
                     echo "No filter value provided.";
                     echo "Filter value: " . htmlspecialchars($filterValue);
@@ -56,7 +56,7 @@
                             </div>
                             ";
 
-                    } else if ($movie['category'] == ""){
+                    } else if ($filterValue == "ANY"){
                         echo "
                             <div class='poster' trailerid='{$movie['trailerPath']}' titleid='{$movie['title']}'>
                             <img src='{$movie['posterPath']}' alt='{$movie['title']}'>
