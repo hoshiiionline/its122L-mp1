@@ -1,6 +1,9 @@
 # its122L-mp1
 Machine Problem 1 
+- submitted by: Roland Oscar Y. Castaneda & Gene Kyle Michael S. Flores
+- submitted: Felipe G. Ante Jr. 
 
+Instructions:
 Create a simple website similar to Netflix.
 
 Requirements:
