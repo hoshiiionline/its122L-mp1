@@ -146,63 +146,65 @@ $movies = [
         "posterPath" => "posters/poster-spiritedaway.jpg",
         "category" => "JMV"
     ],
+
+
     [
         "title" => "The Walking Dead",
-        "trailerPath" => "videos/The Walking Dead.mp4",
+        "trailerPath" => "videos/trailer-walkingdead.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BYWQwMGRhNGEtZTNhMy00MzVjLWJhMjItYjcwMDljMTkyNTg2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "The Boys",
-        "trailerPath" => "videos/The Boys.mp4",
+        "trailerPath" => "videos/trailer-theboys.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BMWJlN2U5MzItNjU4My00NTM2LWFjOWUtOWFiNjg3ZTMxZDY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "Fallout",
-        "trailerPath" => "videos/Fallout.mp4",
+        "trailerPath" => "videos/trailer-fallout.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BNjI5ZmZkNDktZDliMS00ZjlmLWE2MTUtMWVlZjU2YWQ3ZDYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "The Last of Us",
-        "trailerPath" => "videos/The Last of Us.mp4",
+        "trailerPath" => "videos/trailer-thelastofus.mp4", 
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BY2JiNjU3NWYtMTRlYS00NzY3LWE2NDQtZGFkNWE2MDU4OTExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "BoJack Horseman",
-        "trailerPath" => "videos/BoJack Horseman.mp4",
+        "trailerPath" => "videos/trailer-bojackhorseman.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BZmMwMDlkNTEtMmQzZS00ODQ0LWJlZmItOTgwYWMwZGM4MzFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "The Big Bang Theory",
-        "trailerPath" => "videos/TBBT.mp4",
+        "trailerPath" => "videos/trailer-tbbt.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BZjgzY2QyNzItNDhhYi00ZWIwLWFjN2UtZDJkN2MxYWNjMmJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "Arcane",
-        "trailerPath" => "videos/Arcane.mp4",
+        "trailerPath" => "videos/trailer-arcane.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BOWJhYjdjNWEtMWFmNC00ZjNkLThlZGEtN2NkM2U3NTVmMjZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "Breaking Bad",
-        "trailerPath" => "videos/Breaking Bad.mp4",
+        "trailerPath" => "videos/trailer-breakingbad.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "The Simpsons",
-        "trailerPath" => "videos/The Simpsons.mp4",
+        "trailerPath" => "videos/trailer-simpsons.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BNTU2OWE0YWYtMjRlMS00NTUwLWJmZWUtODFhNzJiMGJlMzI3XkEyXkFqcGc@._V1_.jpg",
         "category" => "TVS"
     ],
     [
         "title" => "Stranger Things",
-        "trailerPath" => "videos/Stranger Things.mp4",
+        "trailerPath" => "videos/trailer-strangerthings.mp4",
         "posterPath" => "https://m.media-amazon.com/images/M/MV5BMjE2N2MyMzEtNmU5NS00OTI0LTlkNTMtMWM1YWYyNmU4NmY0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         "category" => "TVS"
     ],
