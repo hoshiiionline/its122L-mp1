@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 0px 0px 0px;
     background-color: #141414;
     position: relative;
@@ -39,6 +39,7 @@ header button {
 nav {
     display: flex;
     align-items: center;
+    padding-top: 15px;
 }
   
 nav ul {
@@ -103,11 +104,21 @@ nav + nav {
     padding: 20px;
   }
 
+.carousel h2 {
+    font-weight: bold;
+}
+
 .poster-container {
     display: flex;
     gap: 10px;
-    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
     padding: 20px;
+}
+
+.poster-container::-webkit-scrollbar {
+    display: none;
 }
 
 .poster {
@@ -126,3 +137,4 @@ nav + nav {
 .poster:hover {
     transform: translateY(-20px)
 }
+
