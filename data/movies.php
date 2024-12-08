@@ -9,15 +9,15 @@ japanese movie - jvm
 $tofilter = "";
 $movies = [
     [
-        "title" => "Back to the Future",
-        "trailerPath" => "videos/trailer-backtothefuture.mp4",
-        "posterPath" => "posters/poster-backtothefuture.jpg",
-        "category" => "MV"
-    ],
-    [
         "title" => "Barbie",
         "trailerPath" => "videos/trailer-barbie.mp4",
         "posterPath" => "posters/poster-barbie.jpg",
+        "category" => "MV"
+    ],
+    [
+        "title" => "Back to the Future",
+        "trailerPath" => "videos/trailer-backtothefuture.mp4",
+        "posterPath" => "posters/poster-backtothefuture.jpg",
         "category" => "MV"
     ],
     [
@@ -57,7 +57,61 @@ $movies = [
         "category" => "MV"
     ],
     [
-        "title" => "Kaguya-Sama: Love is War",
+        "title" => "Attack on Titan",
+        "trailerPath" => "videos/trailer-aot.mp4",
+        "posterPath" => "posters/poster-aot.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "Boku no Hero Academia",
+        "trailerPath" => "videos/trailer-bnha.mp4",
+        "posterPath" => "posters/poster-bnha.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "Chainsaw Man",
+        "trailerPath" => "videos/trailer-chainsawman.mp4",
+        "posterPath" => "posters/poster-chainsawman.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "Evangelion",
+        "trailerPath" => "videos/trailer-evangelion.mp4",
+        "posterPath" => "posters/poster-evangelion.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "Frieren: Beyond Journey's End",
+        "trailerPath" => "videos/trailer-frieren.mp4",
+        "posterPath" => "posters/poster-frieren.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "Jujutsu Kaisen",
+        "trailerPath" => "videos/trailer-jjk.mp4",
+        "posterPath" => "posters/poster-jjk.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "Kaguya Sama: Love is War",
+        "trailerPath" => "videos/trailer-kaguyasama.mp4",
+        "posterPath" => "posters/poster-kaguyasama.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "Oshi No Ko",
+        "trailerPath" => "videos/trailer-oshinoko.mp4",
+        "posterPath" => "posters/poster-oshinoko.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "SpyxFamily",
+        "trailerPath" => "videos/trailer-spyxfamily.mp4",
+        "posterPath" => "posters/poster-spyxfamily.jpg",
+        "category" => "JANIM"
+    ],
+    [
+        "title" => "Kaguya-Sama: Love is War - Movie",
         "trailerPath" => "videos/trailer-kaguyasama-loveiswar.mp4",
         "posterPath" => "posters/poster-kaguyasama-loveiswar.jpg",
         "category" => "JMV"

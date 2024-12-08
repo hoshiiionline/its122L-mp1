@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const posters = document.querySelectorAll(".poster");
     const videoPlayer = document.getElementById("videoPlayer");
+    const headerElement = document.getElementById("header"); //
     const maxDuration = 60;
-    const featureTitle = document.getElementById("feature-title");
 
     videoPlayer.play();
 
@@ -16,12 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
     
     posters.forEach(poster => {
         poster.addEventListener("click", () => {
+            //change
+            posters.forEach(p => p.classList.remove("selected"));
+            poster.classList.add("selected");
+            const title = poster.getAttribute("titleid");
+            if (headerElement) {
+              headerElement.textContent = `${headerElement.textContent.split(' |')[0]}`; 
+              headerElement.textContent += ` | Now Playing: ${title}`;
+          }
+
+
             const videoSrc = poster.getAttribute("trailerid");
             videoPlayer.src = videoSrc;
             videoPlayer.play();
 
-            const titleSrc = poster.getAttribute("titleid");
-            featureTitle.textContent = titleSrc;
         });
     });
 });

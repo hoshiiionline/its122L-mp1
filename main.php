@@ -70,7 +70,6 @@
                             ";
                         break;
                     }
-
                 }
             ?>         
             </video>
@@ -78,7 +77,7 @@
     </section>
 
     <section class="carousel">
-        <h2><?php echo "{$header}";?></h2>
+        <h2 id="header"><?php echo "{$header}";?></h2>
         <div class="poster-container">
         <?php
                 foreach ($movies as $movie) {
@@ -87,7 +86,7 @@
                             <div class='poster' trailerid='{$movie['trailerPath']}' titleid='{$movie['title']}'>
                             <img src='{$movie['posterPath']}' alt='{$movie['title']}'>
                             </div>
-                            ";
+                            ";                        
 
                     } else if ($filterValue == "ANY"){
                         echo "
